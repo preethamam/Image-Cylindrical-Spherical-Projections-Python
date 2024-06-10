@@ -8,7 +8,7 @@ from image2spherical_v1 import image2spherical_v1
 from image2spherical_v2 import image2spherical_v2
 
 # Inputs
-file_name = 'checker.jpg'
+file_name = r'images/checker.jpg'
 
 # Focal lengths
 fx = 50
@@ -20,7 +20,7 @@ dist_coffs = [0, 0, 0, 0, 0]
 if __name__ == '__main__':
     
     # Read image
-    image = cv2.imread("checker.jpg")
+    image = cv2.imread(file_name)
 
     # Get image size
     height, width, by_pixs = image.shape
